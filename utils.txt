@@ -1,0 +1,11 @@
+release記憶體：
+
+def release_memory() -> int:
+    gc.collect()
+    # libc = ctypes.CDLL("libc.so.6")
+    # return libc.malloc_trim(0)
+    ctypes.windll.kernel32.SetProcessWorkingSetSize(ctypes.windll.kernel32.GetCurrentProcess(), -1, -1)
+    return 0
+
+ #  為 "linux" 的寫法
+其次為 "windows" 的寫法
