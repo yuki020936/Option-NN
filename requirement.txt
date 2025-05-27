@@ -1,0 +1,4 @@
+pandarallel==1.6.5
+py_vollib==1.0.1
+QuantLib==1.38
+fftoptionlib==0.1.2
