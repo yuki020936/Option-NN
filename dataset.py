@@ -197,7 +197,7 @@ class DataProcessor:
     def _preprocess(self, drop0volume=True):
         
         # with syn. data
-        result_path = f"{self.root_path}/prs_dataset_252tau.csv/part.0.csv" if drop0volume else f"{self.root_path}/prs_dataset_involve0volume_252tau.csv"
+        result_path = f"{self.root_path}/prs_dataset_252tau.csv" if drop0volume else f"{self.root_path}/prs_dataset_involve0volume_252tau.csv"
         
         # without syn. data
         # result_path = f"{self.root_path}/prs_dataset_252tau.csv/2020.csv" if drop0volume else f"{self.root_path}/prs_dataset_involve0volume_252tau.csv/part.4.csv"
